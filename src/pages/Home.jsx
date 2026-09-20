@@ -83,7 +83,7 @@ export default function Home() {
       </section>
 
       <section className="max-w-7xl mx-auto px-6 lg:px-10 pb-20 grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="relative rounded-2xl overflow-hidden bg-olive-950 min-h-[220px] flex items-center px-8">
+        <div className="relative rounded-2xl overflow-hidden bg-olive-950 min-h-55 flex items-center px-8">
           <img
             src="https://placehold.co/900x500/16281a/f8f3e8?font=playfair-display&text=Order+Online"
             alt=""
@@ -102,7 +102,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="relative rounded-2xl overflow-hidden bg-gold-600 min-h-[220px] flex items-center px-8">
+        <div className="relative rounded-2xl overflow-hidden bg-gold-600 min-h-55 flex items-center px-8">
           <img
             src="https://placehold.co/900x500/b8843a/1c1c1a?font=playfair-display&text=20%25+Off"
             alt=""
