@@ -22,8 +22,25 @@ function ScrollToTop() {
   return null;
 }
 
+// Blocks the right-click menu and text-selection drag as a mild deterrent
+// against casual copy/paste. Paired with the `user-select: none` rule in
+// index.css. See README.md for why this can't fully prevent copying.
+function useContentGuard() {
+  useEffect(() => {
+    const blockContextMenu = (e) => e.preventDefault();
+    const blockSelectStart = (e) => e.preventDefault();
+    document.addEventListener("contextmenu", blockContextMenu);
+    document.addEventListener("selectstart", blockSelectStart);
+    return () => {
+      document.removeEventListener("contextmenu", blockContextMenu);
+      document.removeEventListener("selectstart", blockSelectStart);
+    };
+  }, []);
+}
+
 export default function App() {
   const [cartOpen, setCartOpen] = useState(false);
+  useContentGuard();
 
   return (
     <CartProvider>

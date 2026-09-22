@@ -29,6 +29,26 @@ body {
   color: var(--color-ink-900);
 }
 
+/* Discourage casual text copying/right-click. Not a real security
+   measure — see the note in README.md — but stops the average visitor
+   from selecting or copying page text or images. */
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+input, textarea, select, [contenteditable="true"] {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  user-select: text;
+}
+img {
+  -webkit-user-drag: none;
+  user-drag: none;
+  pointer-events: none;
+}
+
 h1, h2, h3, h4, .font-display {
   font-family: var(--font-display);
 }

@@ -84,7 +84,7 @@ export default function Home() {
       </section>
 
       <section className="max-w-7xl mx-auto px-6 lg:px-10 pb-20 grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="relative rounded-2xl overflow-hidden bg-olive-950 min-h-55 flex items-center px-8">
+        <div className="relative rounded-2xl overflow-hidden bg-olive-950 min-h-[220px] flex items-center px-8">
           <SmartImg
             src={siteImages.orderPromo.image}
             fallback={siteImages.orderPromo.fallback}
@@ -104,7 +104,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="relative rounded-2xl overflow-hidden bg-gold-600 min-h-55 flex items-center px-8">
+        <div className="relative rounded-2xl overflow-hidden bg-gold-600 min-h-[220px] flex items-center px-8">
           <SmartImg
             src={siteImages.offerPromo.image}
             fallback={siteImages.offerPromo.fallback}

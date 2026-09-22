@@ -35,7 +35,7 @@ export default function Footer() {
         <div>
           <p className="text-cream-50 font-medium mb-4">Contact Us</p>
           <ul className="space-y-3 text-sm">
-            <li className="flex items-center gap-2"><Phone size={15} className="text-gold-400" /> +92 300 1234567</li>
+            <li className="flex items-center gap-2"><Phone size={15} className="text-gold-400" /> +92 326 9659536</li>
             <li className="flex items-center gap-2"><Mail size={15} className="text-gold-400" /> hello@theolive.com</li>
             <li className="flex items-center gap-2"><MapPin size={15} className="text-gold-400" /> 123 Food Street, Lahore, Pakistan</li>
           </ul>

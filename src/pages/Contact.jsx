@@ -3,7 +3,7 @@ import { Phone, Mail, MapPin, Clock, CheckCircle2 } from "lucide-react";
 import SmartImg from "../components/SmartImg";
 import { siteImages } from "../data/menu";
 
-const WHATSAPP_NUMBER = "923001234567";
+const WHATSAPP_NUMBER = "923269659536";
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -37,7 +37,7 @@ export default function Contact() {
       <section className="max-w-7xl mx-auto px-6 lg:px-10 py-16 grid grid-cols-1 md:grid-cols-5 gap-10">
         <div className="md:col-span-2 space-y-6">
           {[
-            { icon: Phone, title: "Phone", value: "+92 300 1234567" },
+            { icon: Phone, title: "Phone", value: "+92 326 9659536" },
             { icon: Mail, title: "Email", value: "hello@theolive.com" },
             { icon: MapPin, title: "Address", value: "123 Food Street, Lahore, Pakistan" },
             { icon: Clock, title: "Hours", value: "Mon–Sun: 11:00 AM – 11:00 PM" },

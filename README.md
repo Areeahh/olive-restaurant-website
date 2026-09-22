@@ -69,6 +69,17 @@ or `/gallery` work correctly on refresh/direct link (SPA rewrite to
 - **Contact info / address / socials**: `src/components/Footer.jsx` and
   `src/pages/Contact.jsx`.
 
+## About the "content lock"
+
+The site now blocks right-click, text selection/dragging, and image
+dragging (`src/App.jsx` + the `user-select` rules in `src/index.css`). This
+stops casual copying for the average visitor, but it is **not real
+protection** — anyone can still view your content via the browser's "View
+Page Source," DevTools, or by disabling JavaScript, and nothing can prevent
+a screenshot. Treat this as a light deterrent, not a security measure. If
+you ever want it removed, delete the `useContentGuard()` call in
+`src/App.jsx` and the `user-select`/`user-drag` rules in `src/index.css`.
+
 ## Tech stack
 
 - React 19 + Vite

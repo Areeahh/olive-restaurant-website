@@ -23,7 +23,7 @@ export default function Reservation() {
     setSubmitted(true);
   };
 
-  const whatsappHref = `https://wa.me/923001234567?text=${encodeURIComponent(
+  const whatsappHref = `https://wa.me/923269659536?text=${encodeURIComponent(
     `Hi, I'd like to book a table.\nName: ${form.name}\nDate: ${form.date}\nTime: ${form.time}\nGuests: ${form.guests}`
   )}`;
 
@@ -87,7 +87,7 @@ export default function Reservation() {
                   required
                   value={form.phone}
                   onChange={update("phone")}
-                  placeholder="+92 300 1234567"
+                  placeholder="+92 326 9659536"
                   className="input"
                 />
               </Field>

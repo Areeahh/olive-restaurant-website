@@ -1,5 +1,5 @@
 // Update this to your restaurant's real WhatsApp number, digits only, with country code.
-const WHATSAPP_NUMBER = "923001234567";
+const WHATSAPP_NUMBER = "923269659536";
 const DEFAULT_MESSAGE = "Hi The Olive! I'd like to know more about your menu.";
 
 export default function WhatsAppButton() {
