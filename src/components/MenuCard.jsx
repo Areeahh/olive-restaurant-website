@@ -1,5 +1,6 @@
 import { ShoppingCart } from "lucide-react";
 import { useCart } from "../context/CartContext";
+import SmartImg from "./SmartImg";
 
 export default function MenuCard({ item }) {
   const { addToCart } = useCart();
@@ -7,8 +8,9 @@ export default function MenuCard({ item }) {
   return (
     <div className="bg-cream-50 rounded-2xl overflow-hidden border border-ink-900/5 shadow-sm hover:shadow-lg transition-shadow group">
       <div className="aspect-square overflow-hidden">
-        <img
+        <SmartImg
           src={item.image}
+          fallback={item.fallback}
           alt={item.name}
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           loading="lazy"

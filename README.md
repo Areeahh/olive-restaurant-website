@@ -62,10 +62,10 @@ or `/gallery` work correctly on refresh/direct link (SPA rewrite to
   `src/pages/Contact.jsx` (digits only, with country code, e.g. `923001234567`).
 - **Menu items / prices / categories**: `src/data/menu.js`.
 - **Colors / fonts**: CSS variables in `src/index.css` under `@theme`.
-- **Images**: every image currently uses a styled placeholder
-  (`placehold.co`) so the project runs immediately with no missing assets.
-  Swap the `image` fields in `src/data/menu.js` and the `src` attributes in
-  the page files for your own restaurant photos before going live.
+- **Images**: drop your own photos into `public/images/...` using the exact
+  filenames listed in `public/images/README.md` — they'll appear
+  automatically, no code changes needed. Until a file exists, a styled
+  placeholder is shown instead, so the site never breaks.
 - **Contact info / address / socials**: `src/components/Footer.jsx` and
   `src/pages/Contact.jsx`.
 

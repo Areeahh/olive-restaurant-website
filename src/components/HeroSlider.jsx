@@ -2,6 +2,7 @@ import { useEffect, useState, useCallback } from "react";
 import { Link } from "react-router-dom";
 import { CalendarDays, ShoppingBag, ChevronLeft, ChevronRight } from "lucide-react";
 import { heroSlides } from "../data/menu";
+import SmartImg from "./SmartImg";
 
 export default function HeroSlider() {
   const [index, setIndex] = useState(0);
@@ -26,8 +27,9 @@ export default function HeroSlider() {
             i === index ? "opacity-100 z-10" : "opacity-0 z-0"
           }`}
         >
-          <img
+          <SmartImg
             src={slide.image}
+            fallback={slide.fallback}
             alt=""
             className={`w-full h-full object-cover transition-transform duration-[6000ms] ease-out ${
               i === index ? "scale-110" : "scale-100"

@@ -1,5 +1,7 @@
 import { Leaf, ChefHat, Sofa, ArrowRight, ShieldCheck, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
+import SmartImg from "../components/SmartImg";
+import { siteImages } from "../data/menu";
 
 const values = [
   { icon: Leaf, title: "Fresh Ingredients", desc: "Locally sourced & seasonal" },
@@ -49,8 +51,9 @@ export default function About() {
           </Link>
         </div>
         <div className="relative">
-          <img
-            src="https://placehold.co/700x800/1c3222/f8f3e8?font=playfair-display&text=The+Olive+Interior"
+          <SmartImg
+            src={siteImages.aboutInterior.image}
+            fallback={siteImages.aboutInterior.fallback}
             alt="Restaurant interior"
             className="rounded-2xl w-full object-cover"
           />

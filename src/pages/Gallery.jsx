@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import { galleryImages } from "../data/menu";
+import SmartImg from "../components/SmartImg";
 
 export default function Gallery() {
   const [open, setOpen] = useState(null);
@@ -23,14 +24,15 @@ export default function Gallery() {
 
       <section className="max-w-7xl mx-auto px-6 lg:px-10 py-14">
         <div className="columns-2 md:columns-3 gap-4 space-y-4">
-          {galleryImages.map((src, i) => (
+          {galleryImages.map((g, i) => (
             <button
               key={i}
               onClick={() => setOpen(i)}
               className="block w-full break-inside-avoid rounded-2xl overflow-hidden group"
             >
-              <img
-                src={src}
+              <SmartImg
+                src={g.image}
+                fallback={g.fallback}
                 alt={`Gallery ${i + 1}`}
                 className="w-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
@@ -55,8 +57,9 @@ export default function Gallery() {
           >
             <ChevronLeft size={32} />
           </button>
-          <img
-            src={galleryImages[open]}
+          <SmartImg
+            src={galleryImages[open].image}
+            fallback={galleryImages[open].fallback}
             alt="Enlarged"
             className="max-h-[80vh] max-w-full rounded-xl object-contain"
           />

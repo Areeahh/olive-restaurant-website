@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Phone, Mail, MapPin, Clock, CheckCircle2 } from "lucide-react";
+import SmartImg from "../components/SmartImg";
+import { siteImages } from "../data/menu";
 
 const WHATSAPP_NUMBER = "923001234567";
 
@@ -61,10 +63,13 @@ export default function Contact() {
           </a>
 
           <div className="rounded-xl overflow-hidden border border-ink-900/10 h-52">
-            <img
-              src="https://placehold.co/700x400/1c3222/f8f3e8?font=playfair-display&text=Find+Us+On+The+Map"
-              alt="Map placeholder"
-              className="w-full h-full object-cover"
+            {/* Replace the address in the query below with your real one */}
+            <iframe
+              title="The Olive location"
+              src="https://www.google.com/maps?q=123+Food+Street+Lahore+Pakistan&output=embed"
+              className="w-full h-full border-0"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
             />
           </div>
         </div>

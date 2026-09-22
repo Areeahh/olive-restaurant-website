@@ -9,7 +9,8 @@ import {
 } from "lucide-react";
 import HeroSlider from "../components/HeroSlider";
 import MenuCard from "../components/MenuCard";
-import { categories, menuItems } from "../data/menu";
+import SmartImg from "../components/SmartImg";
+import { categories, menuItems, siteImages } from "../data/menu";
 
 const stats = [
   { icon: UtensilsCrossed, title: "Delicious Food", desc: "Fresh & healthy ingredients" },
@@ -84,8 +85,9 @@ export default function Home() {
 
       <section className="max-w-7xl mx-auto px-6 lg:px-10 pb-20 grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="relative rounded-2xl overflow-hidden bg-olive-950 min-h-55 flex items-center px-8">
-          <img
-            src="https://placehold.co/900x500/16281a/f8f3e8?font=playfair-display&text=Order+Online"
+          <SmartImg
+            src={siteImages.orderPromo.image}
+            fallback={siteImages.orderPromo.fallback}
             alt=""
             className="absolute inset-0 w-full h-full object-cover opacity-40"
           />
@@ -103,8 +105,9 @@ export default function Home() {
           </div>
         </div>
         <div className="relative rounded-2xl overflow-hidden bg-gold-600 min-h-55 flex items-center px-8">
-          <img
-            src="https://placehold.co/900x500/b8843a/1c1c1a?font=playfair-display&text=20%25+Off"
+          <SmartImg
+            src={siteImages.offerPromo.image}
+            fallback={siteImages.offerPromo.fallback}
             alt=""
             className="absolute inset-0 w-full h-full object-cover opacity-30"
           />
