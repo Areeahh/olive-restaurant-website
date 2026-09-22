@@ -12,6 +12,7 @@ import Menu from "./pages/Menu";
 import About from "./pages/About";
 import Gallery from "./pages/Gallery";
 import Reservation from "./pages/Reservation";
+import Checkout from "./pages/Checkout";
 import Contact from "./pages/Contact";
 
 function ScrollToTop() {
@@ -53,6 +54,7 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/reservation" element={<Reservation />} />
+          <Route path="/checkout" element={<Checkout />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>

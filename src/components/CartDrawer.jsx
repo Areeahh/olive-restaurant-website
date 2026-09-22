@@ -76,7 +76,7 @@ export default function CartDrawer({ open, onClose }) {
             <span className="font-display text-xl">${total.toFixed(2)}</span>
           </div>
           <Link
-            to="/reservation"
+            to="/checkout"
             onClick={onClose}
             className="block text-center w-full bg-gold-500 hover:bg-gold-600 text-olive-950 font-semibold py-3 rounded-full transition-colors"
           >

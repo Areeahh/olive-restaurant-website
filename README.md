@@ -12,10 +12,14 @@ button.
 - **About** – story, values, mission stats, "why choose us"
 - **Gallery** – masonry photo grid with a click-to-enlarge lightbox
 - **Reservation** – table booking form (date/time/guests) with a WhatsApp confirm option
-- **Contact** – contact form, contact details, map placeholder, WhatsApp CTA
+- **Checkout** – home delivery & pickup ordering: pulls in whatever's in the cart, lets the customer choose Delivery or Pickup, collects address/phone/time/payment method, and sends the full order to you on WhatsApp to confirm
+- **Contact** – contact form, contact details, embedded map, WhatsApp CTA
 
 A cart icon in the navbar opens a slide-out cart drawer; items persist for
-the session (in memory).
+the session (in memory). "Order Now" (navbar) and "Checkout" (cart drawer)
+both lead to the delivery/pickup checkout flow; "Book a Table" leads to the
+dine-in reservation form — these are two separate flows on purpose, since
+booking a table and ordering delivery are different requests.
 
 ## Run locally
 
@@ -58,8 +62,10 @@ or `/gallery` work correctly on refresh/direct link (SPA rewrite to
 ## Customize
 
 - **WhatsApp number**: edit `WHATSAPP_NUMBER` in
-  `src/components/WhatsAppButton.jsx`, `src/pages/Reservation.jsx`, and
-  `src/pages/Contact.jsx` (digits only, with country code, e.g. `923001234567`).
+  `src/components/WhatsAppButton.jsx`, `src/pages/Reservation.jsx`,
+  `src/pages/Checkout.jsx`, and `src/pages/Contact.jsx` (digits only, with
+  country code, e.g. `923269659536`).
+- **Delivery fee**: edit `DELIVERY_FEE` at the top of `src/pages/Checkout.jsx`.
 - **Menu items / prices / categories**: `src/data/menu.js`.
 - **Colors / fonts**: CSS variables in `src/index.css` under `@theme`.
 - **Images**: drop your own photos into `public/images/...` using the exact

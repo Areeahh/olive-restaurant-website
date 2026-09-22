@@ -78,7 +78,7 @@ export default function Navbar({ onCartClick }) {
             )}
           </button>
           <Link
-            to="/reservation"
+            to="/checkout"
             className="hidden md:inline-flex items-center bg-gold-500 hover:bg-gold-600 text-olive-950 text-sm font-semibold px-5 py-2.5 rounded-full transition-colors"
           >
             Order Now
@@ -108,7 +108,7 @@ export default function Navbar({ onCartClick }) {
             </NavLink>
           ))}
           <Link
-            to="/reservation"
+            to="/checkout"
             onClick={() => setOpen(false)}
             className="inline-flex items-center justify-center bg-gold-500 text-olive-950 text-sm font-semibold px-5 py-2.5 rounded-full"
           >
