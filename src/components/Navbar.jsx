@@ -59,12 +59,7 @@ export default function Navbar({ onCartClick }) {
         </nav>
 
         <div className="flex items-center gap-4">
-          <button
-            aria-label="Search"
-            className="hidden md:flex items-center justify-center w-9 h-9 rounded-full text-cream-50 hover:text-gold-400 transition-colors"
-          >
-            <Search size={19} />
-          </button>
+         
           <button
             aria-label="Cart"
             onClick={onCartClick}
